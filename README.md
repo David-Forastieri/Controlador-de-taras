@@ -1,4 +1,4 @@
-# Grupo Penna- Controlador de Tareas
+# Grupo Penna- App Controlador de Tareas
 
 Este es el repositorio de la aplicación Controlador de Tareas. Esta aplicación te permite llevar un registro de las tareas que realizas a lo largo del día, registrar la hora de inicio y finalización de cada tarea, editar los títulos de las tareas y exportar tu historial de tareas en formato CSV para un análisis posterior.
 
