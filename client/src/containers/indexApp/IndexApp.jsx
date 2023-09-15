@@ -3,11 +3,11 @@ import InputTask from "../../components/InputAddTask/InputTask";
 import TableTask from "../../components/TableTask/TableTask";
 import { useDispatch, useSelector } from 'react-redux'
 import { IndexContainer, TitleApp } from "./style";
-//import { getAllTask } from "../../StoreReducer/actions";
 import TableHistory from "../../components/TableHistory/TableHistory";
 import InputUser from "../../components/InputUser/InputUser";
 import { changeUser } from "../../StoreReducer/actions";
 
+//--PANTALLA DE INICIO DE LA APLICACION
 const IndexApp = () => {
 
   const dispatch = useDispatch()

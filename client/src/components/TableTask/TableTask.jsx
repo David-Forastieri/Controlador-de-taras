@@ -4,10 +4,11 @@ import { ButtonEdit, ButtonIconEdit, EditIcon, FinisButton, InputEdit, InputEdit
 import { useDispatch, useSelector } from 'react-redux';
 import { editTitle, finishTask } from '../../StoreReducer/actions';
 import EditImage from "../../assets/editar.png"
-//import { Botones } from '../../containers/indexApp/style';
 import DownloadCSV from './../../containers/DownloadCSV/DownloadCSV';
 
 const TableTask = ({ AllTaskDB }) => {
+
+  //--TABLA DE VISUALIZACION DE TAREAS GENERAL
 
   const dispatch = useDispatch()
   const User = useSelector(state => state.userReducer.user)

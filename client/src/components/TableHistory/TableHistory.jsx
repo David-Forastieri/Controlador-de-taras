@@ -6,6 +6,8 @@ import DownloadHistory from '../../containers/DownloadCSV/DownloadHistory';
 
 const TableHistory = ({ AllTaskDB }) => {
 
+  //--TABLA DE VISUALIZACION DE HISTORIAL DE TREAS
+
   const [task, setTask] = useState([])
 
   const headersTab = ["Fecha", "Tarea", "Tiempo total", "Total del dia"]

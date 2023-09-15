@@ -5,6 +5,7 @@ export default class TaskManager {
     this.path = path
   }
 
+  //--ENTRAGA AL CLIENTE (FRONTEND) LA LISTA DE TAREAS, DE NO ENCONTRAR EL ARCHIVO DEVUELVE UN ARREGLO VACIO
   getTask = async () => {
     try {
       const response = await fs.promises.readFile(this.path, 'utf-8')
@@ -15,6 +16,7 @@ export default class TaskManager {
     }
   }
 
+  //--GENERA IDENTIFICADORES (ID) PARA CADA TAREA DE MANERA DINAMICA
   idGenerator = async (listTask) => {
     let highNumber = 0
     for (let number of listTask) {
@@ -25,6 +27,7 @@ export default class TaskManager {
     return highNumber + 1;
   }
 
+  //--AGREGA UNA NUEVA TAREA A LA LISTA 
   addNewTask = async (titleTask, date, initTimeFormat) => {
     try {
       const listTask = await this.getTask()
@@ -47,6 +50,7 @@ export default class TaskManager {
     }
   }
 
+  //--ACTUALIZA EL TITULO DE LA TAREA SELECCIONADA
   updatedTask = async (id, titleTask) => {
     try {
       const taskList = await this.getTask()
@@ -63,6 +67,7 @@ export default class TaskManager {
     }
   }
 
+  //--FINALIZA LA TAREA SELECIONADA Y OBTIENE LOS DATOS DE HORA DE FINALIZACION Y TOTAL DE TIEMPO TRANSCURRIDO 
   finishTask = async (id, time, finishTimeFormat) => {
     try {
       const taskList = await this.getTask()

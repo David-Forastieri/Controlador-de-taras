@@ -10,6 +10,7 @@ const InputUser = () => {
 
   const handlerchange = e => setText(e.target.value)
 
+  //--ENVIA EL NUMERO DE DNI DEL USUARIO Y VALIDA QUE TENGA UN FORMATO CORRECTO
   const handlerUser = () => {
     if (text === "" || text.length < 7 || text.length > 8 || !/^[0-9]+$/.test(text)) {
       alert("Es obligatorio completar los datos de manera correcta")
@@ -18,7 +19,6 @@ const InputUser = () => {
       dispatch(saveUser(text))
       setText("")
     }
-
   }
 
   return (

@@ -13,8 +13,11 @@ const InputTask = ({ changeviewhistory, user, AllTaskDB }) => {
 
   let lastIndex = AllTaskDB.length - 1
 
+  //--CAPTURA EL TEXTO INGRESADO POR EL USUARIO
   const handlerchange = e => setText(e.target.value)
 
+  //--ENVIA EL TITULO DE LA TAREA AL SERVIDOR PARA SER GUARDADA
+  //--ADEMAS VALIDAD QUE NO SE ENVIE POR ERROR UN VALOR VACIO
   const sendNewTask = () => {
     if (text === "") return alert("Debe agregar una tarea para continuar")
     if (lastIndex === -1) {

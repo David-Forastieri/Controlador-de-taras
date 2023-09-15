@@ -1,4 +1,6 @@
 
+//--FUNCION QUE OBTIENE LA INFORMACION DE LA TABLA DE TAREAS GENERAL
+//--GENERA UN NUEVO ARREGLO CON LA INFORMACION ORDENADA PARA LUEGO SER DESCARGADA EN FORMATO CSV
 export const downloadTask = (information) => {
   const data = []
 
@@ -15,6 +17,8 @@ export const downloadTask = (information) => {
   return data
 }
 
+//--FUNCION QUE OBTIENE LA INFORMACION DE LA TABLA DE HISTORIAL DE TAREAS
+//--GENERA UN NUEVO ARREGLO CON LA INFORMACION ORDENADA PARA LUEGO SER DESCARGADA EN FORMATO CSV
 export const downloadHistoryTask = (information) => {
 
   const data = []
